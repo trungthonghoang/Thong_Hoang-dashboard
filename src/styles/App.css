@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+/* Header styling */
+.header {
+  background: #d4e7fa url("../images/Winc_Logo.png") no-repeat;
+  background-position: right 20px bottom 20px;
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(25px + 2vmin);
+  color: white;
+}
+
+.header h1 {
+  padding-top: 15px;
+  padding-left: 15px;
+  margin: 0;
+}
+
+.header h2 {
+  padding-left: 15px;
+  font-size: 30px;
+  margin: 0;
+}
+
+/* Navi styling */
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4f8bc9;
+}
+
+.navigation li {
+  float: left;
+}
+
+.navigation li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navigation li a:hover {
+  background-color: #3f6c8e;
+}
+
+/* MainPage styling */
+.mainpage {
+  padding: 15px;
+}
+
+.mainpage h1 {
+  text-align: center;
+  margin: 0;
+}
+
+/* Chart styling */
+.chart {
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 5px;
+  margin: 10px;
+  justify-content: center;
+}
+
+/* student styling */
+.studentName h1 {
+  text-align: center;
+}
+
+.student-title {
+  padding-top: 15px;
+}
+
+.studentoverview h1 {
+  text-align: left;
+  padding-left: 40px;
+  margin-top: 0;
+}
+
+.studentoverview-block {
+  width: 450px;
+}
+
+.studentoverview-list ul {
+  list-style: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.studentoverview-list li {
+  display: inline-block;
+  background-color: #d4e7fa;
+  width: 40%;
+  padding: 10px;
+  margin: 2px;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 2px;
+}
+
+.studentoverview-list li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+/* SelectCheckbox styling */
+.checkboxContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 15px;
+}
+
+.itemcontainer {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-title {
+  margin: 8px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 10px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
